@@ -8,9 +8,39 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject var activities = Activities()
+    
+    @State private var showingActivity = false
+    
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            List {
+                ForEach(activities.items) { item in
+                    NavigationLink(destination: DetailView(activities: self.activities, activity: item)) {
+                        HStack {
+                            VStack(alignment: .leading) {
+                                Text(item.name)
+                                    .font(.headline)
+                                Text(item.description)
+                            }
+                            Spacer()
+                            Text("\(item.times)")
+                        }
+                    }
+                }
+            }
+            .navigationBarTitle(Text("Habit Tracker"))
+            .navigationBarItems(trailing: Button(action: {
+                self.showingActivity = true
+            }, label: {
+                Image(systemName: "plus")
+            }))
+            .sheet(isPresented: $showingActivity) {
+                AddActivity(activities: self.activities)
+            }
+        }
     }
 }
 

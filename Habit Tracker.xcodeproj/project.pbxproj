@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2EAAE9A1279B7DD900C725AB /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAAE9A0279B7DD900C725AB /* Activity.swift */; };
+		2EAAE9A3279B81BB00C725AB /* AddActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAAE9A2279B81BB00C725AB /* AddActivity.swift */; };
+		2EAAE9A5279B884E00C725AB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAAE9A4279B884E00C725AB /* DetailView.swift */; };
 		2ED2EDF1278FB4C9008F114A /* Habit_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED2EDF0278FB4C9008F114A /* Habit_TrackerApp.swift */; };
 		2ED2EDF3278FB4C9008F114A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED2EDF2278FB4C9008F114A /* ContentView.swift */; };
 		2ED2EDF5278FB4CA008F114A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ED2EDF4278FB4CA008F114A /* Assets.xcassets */; };
@@ -14,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2EAAE9A0279B7DD900C725AB /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		2EAAE9A2279B81BB00C725AB /* AddActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActivity.swift; sourceTree = "<group>"; };
+		2EAAE9A4279B884E00C725AB /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		2ED2EDED278FB4C9008F114A /* Habit Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Habit Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ED2EDF0278FB4C9008F114A /* Habit_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit_TrackerApp.swift; sourceTree = "<group>"; };
 		2ED2EDF2278FB4C9008F114A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +59,9 @@
 			children = (
 				2ED2EDF0278FB4C9008F114A /* Habit_TrackerApp.swift */,
 				2ED2EDF2278FB4C9008F114A /* ContentView.swift */,
+				2EAAE9A0279B7DD900C725AB /* Activity.swift */,
+				2EAAE9A2279B81BB00C725AB /* AddActivity.swift */,
+				2EAAE9A4279B884E00C725AB /* DetailView.swift */,
 				2ED2EDF4278FB4CA008F114A /* Assets.xcassets */,
 				2ED2EDF6278FB4CA008F114A /* Preview Content */,
 			);
@@ -137,7 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EAAE9A1279B7DD900C725AB /* Activity.swift in Sources */,
 				2ED2EDF3278FB4C9008F114A /* ContentView.swift in Sources */,
+				2EAAE9A3279B81BB00C725AB /* AddActivity.swift in Sources */,
+				2EAAE9A5279B884E00C725AB /* DetailView.swift in Sources */,
 				2ED2EDF1278FB4C9008F114A /* Habit_TrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
